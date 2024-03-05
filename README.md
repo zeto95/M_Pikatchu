@@ -21,7 +21,7 @@ Google Cloud Storage (GCS) is used for storing both raw and staged data. The buc
 - `airports_staged_data`: Stores transformed data after processing.
 
 ## Configuration Files
-- `config.ini`: Configuration file holding API keys and country name 'German'.  Adding the country, to avoid any hard-coded values in the code and to be more scalable for future usage.
+- `config.ini`: Configuration file holding API keys and country name 'German'. Adding the country in the config file was to avoid any hard-coded values in the code and to be more scalable for future usage. Also, it would be better to save both as variables in Airflow and retrieve them. 
 - `airflow.cfg`: Airflow configuration file (within the docker image)
 
 ## Service Account in GCP
