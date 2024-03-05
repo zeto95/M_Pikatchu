@@ -10,7 +10,8 @@ This project is an Extract, Transform, Load (ETL) pipeline designed to collect a
 
 
 ## Disclaimer
-In this project, the `transform.py` and `extract.py` scripts are placed directly in the `dags/` directory for simplicity. However, this practice is not recommended for production environments, and it is advisable to separate DAGs and scripts for better organization. In production Airflow should not be used to perform the ETL process, however to orchestrate it. 
+In this project, the `transform.py` and `extract.py` scripts are placed directly in the `dags/` directory for simplicity. However, this practice is not recommended for production environments, and it is advisable to separate DAGs and scripts for better organization. In production Airflow should not be used to perform the ETL process, however to orchestrate it.
+Also, while running the project locally, scripts and dags were in different directories as well as the output files of the `raw_data` and `staged_data` 
 
 ## Docker and Airflow Configuration
 The project utilizes Docker to set up the development environment. Airflow is configured within a Docker image, making it easy to deploy and run the ETL process consistently across environments.
