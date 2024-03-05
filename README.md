@@ -70,10 +70,16 @@ load_to_bigquery_task = GoogleCloudStorageToBigQueryOperator(
 ```
 
 Also, there is two more ways and operators that could be used:
-1. Using BigQuery Operator
+`BigQuery Operator`
+```python
 from airflow.providers.google.transfers.gcs_to_bigquery import GCSToBigQueryOperator
+```
 
-2. Using BigQueryHook 
+`BigQueryHook`
+```python
+from airflow.hooks.base_hook import BaseHook
+from google.cloud import bigquery
+```
 
 
 
