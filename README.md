@@ -66,6 +66,7 @@ load_to_bigquery_task = GoogleCloudStorageToBigQueryOperator(
     google_cloud_storage_conn_id='google_cloud_storage_default',  # Connection ID configured in Airflow
     dag=dag
 )
+```
 
 Also, there is two more ways and operators that could be used:
 1. Using BigQuery Operator
